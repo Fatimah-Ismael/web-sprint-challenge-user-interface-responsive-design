@@ -56,6 +56,7 @@ html {
     min-width: 428px;
     width: 100%;
     font-size: 62.5%;
+    
 }
 
 body {
@@ -65,6 +66,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: rgb(225, 239, 230);;
 }
 
 h1 {
@@ -76,11 +78,11 @@ h2 {
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /* header section */
@@ -91,8 +93,23 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
+.info1 {
+    background-color: rgb(0, 4, 17, .8);
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.socials {
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+    justify-content: center;
+    
 
+}
 /* spacers */
 .spacer {
     width: 100%;
@@ -107,10 +124,13 @@ header {
 
 /* gallery section */
 .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
     height: 100vh;
-    text-align: center;
     background-color: rgb(0, 4, 17);
+    text-align: center;
 }
 
 /* about us section */
@@ -122,6 +142,7 @@ header {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    background-color: rgb(0, 4, 17, .8);
 }
 
 .about-container {
@@ -130,7 +151,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 4, 17, .8);
+    
 }
 
 .about h2 {
@@ -138,7 +159,10 @@ header {
 }
 
 .about-container .text {
+    display: flex;
     width: 50%;
+    flex-direction: column;
+
 }
 
 /* contact us section */
@@ -149,6 +173,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 4, 17);
+    width: 100%;
 }
 
 .contact-container {
@@ -190,20 +215,54 @@ header {
 
 /* footer section */
 footer {
+    display: flex;
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
-}
+    text-align: left;
+    background-color: rgb(0, 4, 17);
+    flex-direction: column;
 
+}
+.right {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(0, 4, 17);
+    padding: 2%;
+    align-content: stretch;
+
+}
+.copyright {
+    text-align: right;
+    margin-right: 0%;
+    background-color: rgb(0, 4, 17);
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    .imfo1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400%;
+    }
+    nav {
+        display: flex;  
+        flex-direction: column;
+        font-size: 6rem;
+        width: 500%;
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
+    }
+    .image {
+        display: flex;
+        justify-content: column;    
+        width: 500%;
     }
     
     /* about us section */
