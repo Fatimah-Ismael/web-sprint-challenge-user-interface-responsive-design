@@ -131,8 +131,12 @@ nav {
 }
 .menu-container {
     display: flex;
-    align-items: center;
     background-color: rgb(0, 4, 17, .8);
+}
+.menu-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* footer section */

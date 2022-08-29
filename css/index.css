@@ -158,12 +158,12 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 4, 17, .8);​​
+    background-color: rgb(0, 4, 17, .8);​
     
 }
 
 .about h2 {
-    width: 100%;
+    width: 100%
 }
 
 .about-container .text {
