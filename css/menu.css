@@ -73,6 +73,8 @@ h1 {
 
 h2 {
     font-size: 6rem;
+    text-align: center;
+    padding-top: 10%;
 }
 
 h3 {
@@ -81,40 +83,59 @@ h3 {
 
 h4 {
     font-size: 4rem;
+    ;
+}
+h5 {
+    font-size: 15px;
+    padding-bottom: 5%;
+    width: 85%;
 }
 
 p, a {
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 /* header section */
 header {
     width: 100%;
-    height: 100vh;
+    height: 62vh;
     background-image: url('../img/menu-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    
 }
 .info1 {
     background-color: rgb(0, 4, 17, .8);
+    height: 20vh;
+   
 }
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    
+.navigation {
+    width: 100%;
+    display: inline-block;
+
+}
+.navigation a{
+    padding-inline: 5%;
+    font-size: 1.2rem;
+  
+
+}
+.social a{
+    display: inline-block;
+    padding: 1%;
 }
 
 /* spacer */
 .spacer {
     width: 100%;
-    height: 20vh;
+    height: 8vh;
     background-color: rgb(0, 4, 17);
 }
 .spacer-sm {
     width: 100%;
-    height: 10vh;
+    height: 1vh;
     background-color: rgb(0, 4, 17);
 }
 
@@ -131,35 +152,87 @@ nav {
     
 }
 .menu-container {
-    display: flex;
+    width: 100%;
+   
     background-color: rgb(0, 4, 17, .8);
 }
-.menu-section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.menu-section1 {
+    width: 45%;
+    display: inline-block;
+    
+    padding-left: 7%;
 }
+.menu-section1 p{ 
+    display: inline-block;
+}
+.item {
+    text-align: left;
+    width: 80%;
+}
+.price {
+    right: 0;
+   width: 10%;
+}
+.menu-section2{
+    width: 45%;
+    display: inline-block;
+    padding-left: 5%;
+}
+.menu-section2 p{
+    display: inline-block;
+}
+.vegan{
+    font-size: 15px;
+    font-style: italic;
+}
+.menu-section3{
+    width:80%;
+    display: inline-block;
+    padding-left: 30%;
+    
 
+}
+.menu-section3 p{
+    display: inline-block;
+}
 /* footer section */
 footer {
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
-    font-size: 3rem;
+    font-size: 1.5rem;
     background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
+    display: inline-block;
 }
-.right {
-    display: flex;
-    justify-content: end;
-    background-color: rgb(0, 4, 17);
-    padding: 2%;
-    align-content: stretch;
 
+.email {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    
+}
+nav{
+    width: 100%;
+    right: 0;
+    margin: 0;
+
+}
+.container{
+    width: 100%;
+    padding-left: 1%;
+    display: inline-block;    
+}
+.container a{
+    font-size: 1.5rem;
+    padding-left: 11%;
 }
 .copyright {
     text-align: right;
-    margin-right: 0%;
+    padding-right: 2%;
     background-color: rgb(0, 4, 17);
+    font-size: 10px;
+    padding-bottom: 2%;
 }
 /* mobile media query */
 @media (max-width: 428px) {
